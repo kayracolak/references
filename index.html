@@ -98,17 +98,6 @@
   .hero .lede{margin:1.4rem 0 0;max-width:62ch;font-size:1.12rem;line-height:1.65;color:var(--ink-soft);}
   .hero .lede .accent{color:var(--amber-deep);font-style:italic;}
 
-  .meta{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem 1.4rem;margin-top:2.2rem;}
-  .count-badge{display:inline-flex;align-items:baseline;gap:.5rem;
-    font-family:"Fraunces",serif;}
-  .count-badge .n{font-size:2.4rem;font-weight:600;line-height:1;color:var(--amber-deep);}
-  .count-badge .t{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--ink-faint);}
-  .tags{display:flex;flex-wrap:wrap;gap:.45rem;}
-  .tag{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.04em;
-    color:var(--mocha);background:rgba(203,160,112,.16);border:1px solid var(--line-soft);
-    padding:.3rem .65rem;border-radius:999px;}
-
   .rule{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.4rem);}
   .rule hr{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:0;}
 
@@ -228,17 +217,6 @@
     <div class="kicker">References · Food Science</div>
     <h1>Physio-chemical Stabilization of <em>Protein-enriched</em> Probiotic Kombucha-Coffee Beverages</h1>
     <p class="lede">The complete list of works cited in this study on whey&nbsp;protein, pectin and coffee polyphenols — gathered here on a <span class="accent">single page</span> for easy review.</p>
-    <div class="meta">
-      <span class="count-badge"><span class="n" id="totalN">0</span><span class="t">References</span></span>
-      <div class="tags">
-        <span class="tag">Whey protein</span>
-        <span class="tag">Pectin</span>
-        <span class="tag">Coffee</span>
-        <span class="tag">Colloidal stability</span>
-        <span class="tag">Core-shell model</span>
-        <span class="tag">Functional beverage</span>
-      </div>
-    </div>
   </header>
 
   <div class="rule"><hr/></div>
@@ -319,13 +297,11 @@
   const listEl = document.getElementById('list');
   const shownEl = document.getElementById('shown');
   const totalEl = document.getElementById('total');
-  const totalN = document.getElementById('totalN');
   const searchEl = document.getElementById('search');
   const emptyEl = document.getElementById('empty');
   const toastEl = document.getElementById('toast');
 
   totalEl.textContent = REFS.length;
-  totalN.textContent = REFS.length;
 
   const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
