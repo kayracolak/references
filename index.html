@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>References · Physio-chemical Stabilization of Protein-enriched Kombucha-Coffee Beverages</title>
+<meta name="description" content="Complete bibliography for the study on physico-chemical stabilization of protein-enriched probiotic kombucha-coffee beverages." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f1e7d7;
+    --paper:#faf4ea;
+    --paper-2:#f6eee1;
+    --ink:#2a1c12;
+    --ink-soft:#4f3b2d;
+    --ink-faint:#8a7565;
+    --mocha:#6f4e37;
+    --crema:#cba070;
+    --amber:#b06a32;
+    --amber-deep:#8a4d22;
+    --green:#4e6a51;
+    --line:rgba(82,54,36,.16);
+    --line-soft:rgba(82,54,36,.09);
+    --shadow:0 1px 2px rgba(42,28,18,.05), 0 18px 40px -22px rgba(42,28,18,.40);
+    --shadow-sm:0 1px 2px rgba(42,28,18,.06), 0 10px 24px -16px rgba(42,28,18,.30);
+    --maxw:980px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+
+  /* ---------- Atmospheric background ---------- */
+  .bg-field{position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      radial-gradient(680px 520px at 84% -8%, rgba(203,160,112,.45), transparent 60%),
+      radial-gradient(720px 600px at 6% 4%, rgba(176,106,50,.18), transparent 55%),
+      radial-gradient(900px 760px at 50% 120%, rgba(78,106,81,.16), transparent 60%),
+      linear-gradient(180deg,#f4ebdc 0%, #efe4d3 48%, #ecdfcd 100%);
+  }
+  /* faint coffee rings */
+  .bg-field::before,.bg-field::after{content:"";position:absolute;border-radius:50%;
+    border:2px solid rgba(110,78,55,.10);opacity:.6;}
+  .bg-field::before{width:340px;height:340px;top:12%;right:-90px;
+    box-shadow:inset 0 0 0 14px rgba(110,78,55,.05);}
+  .bg-field::after{width:220px;height:220px;bottom:8%;left:-70px;
+    box-shadow:inset 0 0 0 10px rgba(110,78,55,.05);}
+  /* paper grain */
+  .grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  /* ---------- Sticky toolbar ---------- */
+  .toolbar{position:sticky;top:0;z-index:50;
+    backdrop-filter:saturate(140%) blur(10px);
+    background:linear-gradient(180deg, rgba(247,239,227,.92), rgba(247,239,227,.74));
+    border-bottom:1px solid var(--line-soft);}
+  .toolbar-inner{max-width:var(--maxw);margin:0 auto;padding:.7rem clamp(1rem,4vw,2.4rem);
+    display:flex;align-items:center;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.6rem;min-width:0;}
+  .brand .mark{flex:0 0 auto;color:var(--amber);}
+  .brand .label{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .brand .label b{color:var(--ink-soft);font-weight:600;}
+  .tools{margin-left:auto;display:flex;align-items:center;gap:.55rem;}
+  .search{position:relative;}
+  .search svg{position:absolute;left:.7rem;top:50%;transform:translateY(-50%);color:var(--ink-faint);pointer-events:none;}
+  .search input{font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:var(--ink);
+    background:var(--paper);border:1px solid var(--line);border-radius:999px;
+    padding:.5rem .9rem .5rem 2.1rem;width:clamp(140px,28vw,260px);transition:.2s ease;outline:none;}
+  .search input::placeholder{color:var(--ink-faint);}
+  .search input:focus{border-color:var(--amber);box-shadow:0 0 0 4px rgba(176,106,50,.12);width:clamp(180px,30vw,300px);}
+  .btn{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);border-radius:999px;
+    padding:.52rem .9rem;cursor:pointer;transition:.18s ease;white-space:nowrap;display:inline-flex;align-items:center;gap:.4rem;}
+  .btn:hover{border-color:var(--amber);color:var(--amber-deep);background:var(--paper-2);}
+  .btn:active{transform:translateY(1px);}
+
+  /* ---------- Hero ---------- */
+  .hero{max-width:var(--maxw);margin:0 auto;padding:clamp(3rem,9vw,6.5rem) clamp(1rem,4vw,2.4rem) clamp(2rem,5vw,3.2rem);}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--amber-deep);display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem;}
+  .kicker::after{content:"";height:1px;flex:1;max-width:120px;background:linear-gradient(90deg,var(--crema),transparent);}
+  .hero h1{font-family:"Fraunces",serif;font-weight:500;font-optical-sizing:auto;
+    font-size:clamp(2.1rem,6vw,4.2rem);line-height:1.02;letter-spacing:-.015em;color:var(--ink);margin:0;}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--mocha);}
+  .hero .lede{margin:1.4rem 0 0;max-width:62ch;font-size:1.12rem;line-height:1.65;color:var(--ink-soft);}
+  .hero .lede .accent{color:var(--amber-deep);font-style:italic;}
+
+  .meta{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem 1.4rem;margin-top:2.2rem;}
+  .count-badge{display:inline-flex;align-items:baseline;gap:.5rem;
+    font-family:"Fraunces",serif;}
+  .count-badge .n{font-size:2.4rem;font-weight:600;line-height:1;color:var(--amber-deep);}
+  .count-badge .t{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--ink-faint);}
+  .tags{display:flex;flex-wrap:wrap;gap:.45rem;}
+  .tag{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.04em;
+    color:var(--mocha);background:rgba(203,160,112,.16);border:1px solid var(--line-soft);
+    padding:.3rem .65rem;border-radius:999px;}
+
+  .rule{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.4rem);}
+  .rule hr{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:0;}
+
+  /* ---------- List ---------- */
+  main{max-width:var(--maxw);margin:0 auto;padding:clamp(1.4rem,3vw,2.4rem) clamp(1rem,4vw,2.4rem) 4rem;}
+  .status{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-faint);margin:.4rem 0 1.4rem;display:flex;align-items:center;gap:.5rem;}
+  .status .dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(78,106,81,.18);}
+
+  ol.refs{list-style:none;margin:0;padding:0;counter-reset:none;}
+  li.ref{position:relative;display:grid;grid-template-columns:3rem 1fr auto;gap:.4rem 1.1rem;
+    align-items:start;padding:1.15rem 1.1rem;border-radius:14px;border-bottom:1px solid var(--line-soft);
+    transition:background .25s ease, box-shadow .25s ease, transform .25s ease;}
+  li.ref:last-child{border-bottom:none;}
+  li.ref::before{content:"";position:absolute;left:0;top:14%;bottom:14%;width:2px;border-radius:2px;
+    background:var(--amber);opacity:0;transform:scaleY(.4);transform-origin:center;transition:.25s ease;}
+  li.ref:hover{background:var(--paper);box-shadow:var(--shadow-sm);border-bottom-color:transparent;}
+  li.ref:hover::before{opacity:1;transform:scaleY(1);}
+  li.ref:target{background:var(--paper);box-shadow:var(--shadow);}
+
+  .num{font-family:"IBM Plex Mono",monospace;font-size:.82rem;font-weight:500;color:var(--amber);
+    padding-top:.28rem;text-align:right;font-variant-numeric:tabular-nums;
+    letter-spacing:.02em;}
+  .cite{font-family:"Newsreader",serif;font-size:1.04rem;line-height:1.62;color:var(--ink-soft);
+    word-break:break-word;}
+  .cite a.doi{color:var(--green);text-decoration:none;border-bottom:1px solid rgba(78,106,81,.35);
+    transition:.18s ease;word-break:break-all;}
+  .cite a.doi:hover{color:#3a5440;border-bottom-color:var(--green);background:rgba(78,106,81,.08);}
+  .cite mark{background:rgba(203,160,112,.5);color:var(--ink);border-radius:3px;padding:0 .05em;
+    box-shadow:0 0 0 2px rgba(203,160,112,.5);}
+
+  .copy{grid-column:3;align-self:start;margin-top:.1rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;
+    background:transparent;border:1px solid var(--line);color:var(--ink-faint);border-radius:999px;
+    padding:.3rem .55rem;cursor:pointer;opacity:0;transition:.18s ease;white-space:nowrap;}
+  li.ref:hover .copy{opacity:1;}
+  .copy:hover{border-color:var(--amber);color:var(--amber-deep);}
+  .copy.done{border-color:var(--green);color:var(--green);}
+
+  .empty{display:none;text-align:center;padding:3.5rem 1rem;color:var(--ink-faint);
+    font-family:"IBM Plex Mono",monospace;font-size:.85rem;letter-spacing:.06em;}
+  .empty[data-show="1"]{display:block;}
+
+  /* reveal */
+  li.ref{opacity:0;transform:translateY(14px);}
+  li.ref.in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1);}
+
+  /* ---------- Footer ---------- */
+  footer{max-width:var(--maxw);margin:0 auto;padding:2.4rem clamp(1rem,4vw,2.4rem) 4rem;
+    border-top:1px solid var(--line-soft);}
+  footer .ftitle{font-family:"Fraunces",serif;font-style:italic;font-size:1.15rem;color:var(--mocha);margin:0 0 .5rem;}
+  footer p{font-family:"IBM Plex Mono",monospace;font-size:.72rem;line-height:1.8;letter-spacing:.03em;
+    color:var(--ink-faint);margin:0;max-width:70ch;}
+
+  /* back to top */
+  .totop{position:fixed;right:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:60;
+    width:46px;height:46px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+    background:var(--ink);color:var(--paper);border:none;box-shadow:var(--shadow);
+    opacity:0;transform:translateY(10px) scale(.9);pointer-events:none;transition:.25s ease;}
+  .totop.show{opacity:1;transform:none;pointer-events:auto;}
+  .totop:hover{background:var(--amber-deep);}
+
+  /* toast */
+  .toast{position:fixed;left:50%;bottom:2rem;transform:translateX(-50%) translateY(20px);z-index:80;
+    background:var(--ink);color:var(--paper);font-family:"IBM Plex Mono",monospace;font-size:.78rem;
+    letter-spacing:.04em;padding:.7rem 1.1rem;border-radius:999px;box-shadow:var(--shadow);
+    opacity:0;pointer-events:none;transition:.3s ease;}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+  @media (max-width:640px){
+    body{font-size:17px;}
+    .brand .label{display:none;}
+    li.ref{grid-template-columns:2.2rem 1fr;padding:1rem .4rem;gap:.5rem .7rem;}
+    .copy{grid-column:2;justify-self:start;opacity:1;margin-top:.5rem;}
+    li.ref::before{display:none;}
+    .tools .btn span{display:none;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    li.ref{opacity:1;transform:none;}
+    *{transition:none!important;animation:none!important;}
+  }
+</style>
+</head>
+<body>
+  <div class="bg-field" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="toolbar-inner">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="7" r="2.2"/><circle cx="17.5" cy="6" r="2"/><circle cx="12" cy="14.5" r="2.6"/><circle cx="19" cy="16.5" r="1.8"/>
+            <path d="M7.7 8.4l2.4 4M15.8 7l-2.2 5M14.4 15.6l3 .6"/>
+          </svg>
+        </span>
+        <span class="label"><b>Bibliography</b> · Kombucha-Coffee Study</span>
+      </div>
+      <div class="tools">
+        <label class="search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="search" type="search" placeholder="Search authors, journal, year…" autocomplete="off" aria-label="Search references" />
+        </label>
+        <button class="btn" id="copyAll" title="Copy all references">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          <span>Copy all</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="kicker">References · Food Science</div>
+    <h1>Physio-chemical Stabilization of <em>Protein-enriched</em> Probiotic Kombucha-Coffee Beverages</h1>
+    <p class="lede">The complete list of works cited in this study on whey&nbsp;protein, pectin and coffee polyphenols — gathered here on a <span class="accent">single page</span> for easy review.</p>
+    <div class="meta">
+      <span class="count-badge"><span class="n" id="totalN">0</span><span class="t">References</span></span>
+      <div class="tags">
+        <span class="tag">Whey protein</span>
+        <span class="tag">Pectin</span>
+        <span class="tag">Coffee</span>
+        <span class="tag">Colloidal stability</span>
+        <span class="tag">Core-shell model</span>
+        <span class="tag">Functional beverage</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="rule"><hr/></div>
+
+  <!-- List -->
+  <main>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span>Showing <span id="shown">0</span> of <span id="total">0</span> references</span></div>
+    <ol class="refs" id="list" aria-live="polite"></ol>
+    <div class="empty" id="empty">No references match your search.</div>
+  </main>
+
+  <footer>
+    <p class="ftitle">References, end to end.</p>
+    <p>Source: <em>Physio_chemical.txt</em> — references section, transcribed verbatim and preserved in original order. DOI identifiers, where present, link to the resolving record at doi.org. Built as a static page for review.</p>
+  </footer>
+
+  <button class="totop" id="totop" title="Back to top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg>
+  </button>
+  <div class="toast" id="toast">Copied</div>
+
+<script>
+  const REFS = [
+  "Barone, G., Moloney, C., O’Regan, J., Kelly, A. L., & O’Mahony, J. A. (2020). Chemical composition, protein profile and physicochemical properties of whey protein concentrate ingredients enriched in α-lactalbumin. Journal of Food Composition and Analysis, 92, 103546.",
+  "Chen, G.Q., Qu, Y., Gras, S.L. et al. Separation Technologies for Whey Protein Fractionation. Food Eng Rev 15, 438–465 (2023).",
+  "Cooper, C. L., Dubin, P. L., Kayitmazer, A. B., & Turksen, S. (2005). Polyelectrolyte–protein complexes. Current Opinion in Colloid & Interface Science, 10(1-2), 52-78.",
+  "El-Messery, T. M., Mwafy, E. A., Mostafa, A. M., Fakhr El-Din, H. M., Mwafy, A., Amarowicz, R., & Özçelik, B. (2020). Spectroscopic studies of the interaction between isolated polyphenols from coffee and the milk proteins. Surfaces and Interfaces, 20, 100558.",
+  "Everette, J. D., Bryant, Q. M., Green, A. M., Abbey, Y. A., Wangila, G. W., & Walker, R. B. (2010). Thorough study of reactivity of various compound classes toward the Folin−Ciocalteu reagent. Journal of Agricultural and Food Chemistry, 58(14), 8139-8144.",
+  "Jones, O. G., Decker, E. A., & McClements, D. J. (2009). Formation of biopolymer particles by thermal treatment of β-lactoglobulin-pectin complexes. Food Hydrocolloids, 23, 1312-1321.",
+  "Morais, F. P. R. de, Pessato, T. B., Rodrigues, E., Mallmann, L. P., Mariutti, L. R. B., & Netto, F. M. (2020). Whey protein and phenolic compound complexation: Effects on antioxidant capacity before and after in vitro digestion. Food Research International, 133, 109104.",
+  "Gentès, M. C., St-Gelais, D., & Turgeon, S. L. (2010). Stabilization of whey protein isolate–pectin complexes by heat. Journal of Agricultural and Food Chemistry, 58(11), 7051-7058.",
+  "LaClair, C. E., & Etzel, M. R. (2010). Ingredients and pH are key to clear beverages that contain whey protein. Journal of Food Science, 75(1), C21-C27.",
+  "Kim, J. H., Ahn, D. U., Eun, J. B., & Moon, S. H. (2016). Antioxidant effect of extracts from the coffee residue in raw and cooked meat. Antioxidants, 5, 21.",
+  "Ozdal, T., Capanoglu, E., & Altay, F. (2013). A review on protein–phenolic interactions and associated changes. Food Research International, 51(2), 954-970.",
+  "Pelegrine, D. H. G., & Gasparetto, C. A. (2005). Whey proteins solubility as function of temperature and pH. LWT - Food Science and Technology, 38(1), 77-80.",
+  "Salminen, H., & Weiss, J. (2014). Electrostatic adsorption and stability of whey protein-pectin complexes on emulsion interfaces. Food Hydrocolloids, 35, 410-419.",
+  "Saroglu, O., Irmak, Y. G., Yildirim, R. M., & Karadag, A. (2025). Characterization of SCOBY and Lactiplantibacillus plantarum ELB90 fermented coffee kombucha from different coffee sources. Fermentation, 11, 428.",
+  "Sun, X., Sarteshnizi, R. A., & Udenigwe, C. C. (2022). Recent advances in protein-polyphenol interactions focusing on structural properties related to antioxidant activities. Current Opinion in Food Science, 45, 100840.",
+  "Tarahi, M., Gharagozlou, M., Niakousari, M., & Hedayati, S. (2024). Protein–Chlorogenic Acid Interactions: Mechanisms, Characteristics, and Potential Food Applications. Antioxidants, 13(7), 777.",
+  "Yan, C., Zhu, X. C., Chen, B., Guan, H., Gu, K., & Liu, H. (2025). Protein/peptide-polyphenol Interactions: Molecular mechanisms, functional synergy, and emerging applications. Trends in Food Science & Technology, 163, 105194.",
+  "Yen, W. J., Wang, B. S., Chang, L. W., & Duh, P. D. (2005). Antioxidant properties of roasted coffee residues. Journal of Agricultural and Food Chemistry, 53(7), 2658-2663.",
+  "Ziyatdinova, G., Nizamova, A., & Budnikov, H. (2010). Novel coulometric approach to evaluation of total free polyphenols in tea and coffee beverages in presence of milk proteins. Food Analytical Methods, 4, 334–340.",
+  "Harrison, K.; Curtin, C. Microbial Composition of SCOBY Starter Cultures Used by Commercial Kombucha Brewers in North America. Microorganisms 2021, 9, 1060.",
+  "Tran, T.; Grandvalet, C.; Verdier, F.; Martin, A.; Alexandre, H.; Tourdot-Maréchal, R. Microbial Dynamics between Yeasts and Acetic Acid Bacteria in Kombucha: Impacts on the Chemical Composition of the Beverage. Foods 2020, 9, 963.",
+  "Bougl´e, D., & Bouhallab, S. (2017). Dietary bioactive peptides: Human studies. CriticalReviews in Food Science and Nutrition, 57(2), 335–343.",
+  "(Luca, S. V., Macovei, I., Bujor, A., Miron, A., Skalicka-Wo´ zniak, K., Aprotosoaie, A. C., & Trifan, A. (2020). Bioactivity of dietary polyphenols: The role of metabolites. Critical Reviews in Food Science and Nutrition, 60(4), 626–659.",
+  "Jacobo-Velazquez DA, Cisneros-Zevallos L. Bioactive Phenolics and polyphenols:current advances and future trends. Int J Mol Sci. (2020) 21:6142. doi: 10.3390/ijms21176142",
+  "Żyżelewicz D, Kulbat-Warycha K, Oracz J, Żyżelewicz K. Polyphenols and otherbioactive compounds of Sideritis plants and their potential biological activity. Molecules.(2020) 25:3763. doi: 10.3390/molecules25163763",
+  "Zhao CN, Tang GY, Cao SY, Xu XY, Gan RY, Liu Q, et al. Phenolic profiles and antioxidant activities of 30 tea infusions from green, black, oolong, white, yellow and dark teas. Antioxidants. (2019) 8:215. doi: 10.3390/antiox8070215",
+  "Singh DP, Borse SP, Nivsarkar M. Clinical importance of nonsteroidal anti-inflammatory drug enteropathy: the relevance of tumor necrosis factor as a promising target. Transl Res. (2016) 175:76–91. doi: 10.1016/j.trsl.2016.03.014",
+  "Tuli HS, Mittal S, Aggarwal D, Parashar G, Parashar NC, Upadhyay SK, et al. Path of Silibinin from diet to medicine: a dietary polyphenolic flavonoid having potential anti-cancer therapeutic significance. Semin Cancer Biol. (2021) 73:196–218. doi:10.1016/j.semcancer.2020.09.014",
+  "Yu R, Wang H, Wang R, Zhao P, Chen Y, Liu G, et al. Polyphenol modified natural collagen fibrous network towards sustainable and antibacterial microfiltration membrane for efficient water disinfection. Water Res. (2022) 218:118469. doi: 10.1016/j.watres.2022.118469",
+  "Lamothe, S., Langlois, A., Bazinet, L., Couillard, C., & Britten, M. (2016). Antioxidant activity and nutrient release from polyphenol-enriched cheese in a simulated gastrointestinal environment. Food & Function, 7(3), 1634–1644.",
+  "Horstman AMH, Huppertz T. Milk proteins: processing, gastric coagulation, amino acid availability and muscle protein synthesis. Crit Rev Food Sci Nutr. (2023) 63:10267–82. doi: 10.1080/10408398.2022.2078782",
+  "Poutanen KS, Karlund AO, Gomez-Gallego C, Johansson DP, Scheers NM, Marklinder IM, et al. Grains - a major source of sustainable protein for health. Nutr Rev. (2022) 80:1648–63. doi: 10.1093/nutrit/nuab084",
+  "Liu F, Ma C, Mcclements DJ, Gao Y. A comparative study of covalent and non-covalent interactions between zein and polyphenols in ethanol-water solution. Food Hydrocoll. (2017) 63:625–34. doi: 10.1016/j.foodhyd.2016.09.041",
+  "Zhao, L., Zhou, A., Liu, Z., Xiao, J., Wang, Y., Cao, Y., & Wang, L. (2020). Inhibitory mechanism of lactoferrin on antibacterial activity of oenothein B: Isothermal titration calorimetry and computational docking simulation. Journal of the Science of Food and Agriculture, 100(6), 2494–2501",
+  "Ozdal T, Capanoglu, E, Altay F. 2013. A review on protein–phenolic interactions and associated changes. Food Res Int, 51: 954-970.",
+  "Bartolome B, Estrella I, Hernandez MT, 2000. Interaction of low molecular weight phenolics with proteins (BSA). J Food Sci, 65(4): 617-621.",
+  "Guo W, Kong E, Meydani M. 2009. Dietary polyphenols, inflammation, and cancer. Nutr Cancer, 61: 807-810.",
+  "Sastry MCS, Rao MSN. 1990. Binding of CGA by the isolated polyphenol-free 11S protein of sunflower (Helianthus annus) seed. J Agric Food Chem, 38, 2103-2110.",
+  "Dai, S., Xu, T., Yuan, Y., Fang, Q., Lian, Z., Tian, T., Tong, X., Jiang, L., & Wang, H. (2024). Combination and precipitation mechanism of soy protein and tea polyphenols. Food Hydrocolloids, 146, Article",
+  "Thongkaew C, Gibis M, Hinrichs J, Weiss J. 2014. Polyphenol interactions with whey protein isolate and whey protein isolate-pectin coacervates. Food Hydrocoll, 41: 103-112.",
+  "Wu, H.; Gu, J.; BK, A.; Nawaz, M.A.; Barrow, C.J.; Dunshea, F.R.; Suleria, H.A.R. Effect of Processing on Bioaccessibility and Bioavailability of Bioactive Compounds in Coffee Beans. Food Biosci. 2022, 46, 101373.",
+  "Min, J.; Cao, Z.; Cui, L.; Li, F.; Lu, Z.; Hou, Y.; Yang, H.; Wang, X.; Xu, C. The Association between Coffee Consumption and Risk of Incident Depression and Anxiety: Exploring the Benefits of Moderate Intake. Psychiatry Res. 2023, 326, 115307.",
+  "Chan, M.Z.A.; Liu, S.-Q. Coffee Brews as Food Matrices for Delivering Probiotics: Opportunities, Challenges, and Potential Health Benefits. Trends Food Sci. Technol. 2022, 119, 227–242",
+  "Mao, T., Wescombe, P., & Mohan, M. S. (2024). Predominance of non-covalent interactions of polyphenols with milk proteins and their health promoting properties. Critical Reviews in Food Science and Nutrition, 64(32), 11871–11893.",
+  "Yu, Y., Liang, G., & Wang, H. (2022). Interaction mechanism of flavonoids and tartary buckwheat bran protein: A fluorescence spectroscopic and 3D-QSAR study. Food Research International, 160, Article 111669.",
+  "Dai, S., Xu, T., Yuan, Y., Fang, Q., Lian, Z., Tian, T., Tong, X., Jiang, L., & Wang, H. (2024). Combination and precipitation mechanism of soy protein and tea polyphenols. Food Hydrocolloids, 146, Article 109197.",
+  "Damodaran S. 1996. Amino acids, peptides, and proteins. In Food chemistry, Fennema O.R. (Ed.), Marcel Dekker, Inc. pp. 321-429.",
+  "Sastry MCS, Rao MSN. 1990. Binding of CGA by the isolated polyphenol-free 11S protein of sunflower (Helianthus annus) seed. J Agric Food Chem, 38, 2103-2110.",
+  "Thongkaew C, Gibis M, Hinrichs J, Weiss J. 2014. Polyphenol interactions with whey protein isolate and whey protein isolate-pectin coacervates. Food Hydrocoll, 41: 103-112.",
+  "Du, Z., Jia, Z., Yang, J., Zhao, Y., Zang, J., & Zhao, G. (2026). Exploration of natural protein-polysaccharide-polyphenol ternary complexes from grape pomace for clean-label Pickering emulsions through pH adjustment. Foods, 15(3), 564.",
+  "Pérez, M., Dominguez-López, I., & Lamuela-Raventós, R. M. (2023). The chemistry behind the Folin-Ciocalteu method for the estimation of (poly)phenol content in food: Total phenolic intake in a Mediterranean dietary pattern. Journal of Agricultural and Food Chemistry, 71(45), 17543–17553.",
+  "Shang, J., Ritian, J., Yang, W., Teng, X., Sun, H., Zhang, F., Zhang, L., Xu, Y., Ren, H., & Liu, N. (2023). The effect of different edible fungal polysaccharides on the stability of whey protein isolate solution near isoelectric point. International Journal of Food Science and Technology, 58(3), 1150–1161."
+];
+
+  const listEl = document.getElementById('list');
+  const shownEl = document.getElementById('shown');
+  const totalEl = document.getElementById('total');
+  const totalN = document.getElementById('totalN');
+  const searchEl = document.getElementById('search');
+  const emptyEl = document.getElementById('empty');
+  const toastEl = document.getElementById('toast');
+
+  totalEl.textContent = REFS.length;
+  totalN.textContent = REFS.length;
+
+  const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  function linkifyDOI(html){
+    return html.replace(/doi:\s*(10\.[^\s]+)/gi, (m, d) => {
+      const clean = d.replace(/[.,;]+$/, '');
+      return 'doi: <a class="doi" href="https://doi.org/' + clean + '" target="_blank" rel="noopener">' + clean + '</a>';
+    });
+  }
+
+  const items = REFS.map((text, i) => {
+    const li = document.createElement('li');
+    li.className = 'ref';
+    li.id = 'ref-' + (i + 1);
+    li.dataset.text = text.toLowerCase();
+
+    const num = document.createElement('span');
+    num.className = 'num';
+    num.textContent = String(i + 1).padStart(2, '0');
+
+    const cite = document.createElement('div');
+    cite.className = 'cite';
+    cite.innerHTML = linkifyDOI(esc(text));
+    cite._orig = cite.innerHTML;
+
+    const copy = document.createElement('button');
+    copy.className = 'copy';
+    copy.type = 'button';
+    copy.textContent = 'Copy';
+    copy.setAttribute('aria-label', 'Copy reference ' + (i + 1));
+    copy.addEventListener('click', () => {
+      navigator.clipboard.writeText((i + 1) + '. ' + text).then(() => {
+        copy.textContent = 'Done'; copy.classList.add('done');
+        setTimeout(() => { copy.textContent = 'Copy'; copy.classList.remove('done'); }, 1400);
+      });
+    });
+
+    li.append(num, cite, copy);
+    return li;
+  });
+
+  function highlight(cite, q){
+    cite.innerHTML = cite._orig;
+    if(!q) return;
+    const ql = q.toLowerCase();
+    const walker = document.createTreeWalker(cite, NodeFilter.SHOW_TEXT, null);
+    const nodes = [];
+    while(walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      const t = node.nodeValue, tl = t.toLowerCase();
+      let idx = tl.indexOf(ql);
+      if(idx < 0) return;
+      const frag = document.createDocumentFragment();
+      let last = 0;
+      while(idx >= 0){
+        frag.appendChild(document.createTextNode(t.slice(last, idx)));
+        const mk = document.createElement('mark');
+        mk.textContent = t.slice(idx, idx + ql.length);
+        frag.appendChild(mk);
+        last = idx + ql.length;
+        idx = tl.indexOf(ql, last);
+      }
+      frag.appendChild(document.createTextNode(t.slice(last)));
+      node.parentNode.replaceChild(frag, node);
+    });
+  }
+
+  function applyFilter(){
+    const q = searchEl.value.trim();
+    const ql = q.toLowerCase();
+    let shown = 0;
+    items.forEach(li => {
+      const match = !ql || li.dataset.text.includes(ql);
+      li.style.display = match ? '' : 'none';
+      if(match){ shown++; highlight(li.querySelector('.cite'), q); }
+    });
+    shownEl.textContent = shown;
+    emptyEl.dataset.show = shown === 0 ? '1' : '0';
+  }
+
+  searchEl.addEventListener('input', applyFilter);
+  document.addEventListener('keydown', e => {
+    if(e.key === '/' && document.activeElement !== searchEl){ e.preventDefault(); searchEl.focus(); }
+    if(e.key === 'Escape' && document.activeElement === searchEl){ searchEl.value=''; applyFilter(); searchEl.blur(); }
+  });
+
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => toastEl.classList.remove('show'), 1800);
+  }
+
+  document.getElementById('copyAll').addEventListener('click', () => {
+    const txt = REFS.map((t, i) => (i + 1) + '. ' + t).join('\n\n');
+    navigator.clipboard.writeText(txt).then(() => toast('All ' + REFS.length + ' references copied'));
+  });
+
+  // Reveal on scroll
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){
+    items.forEach(li => { li.classList.add('in'); listEl.appendChild(li); });
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, k) => {
+        if(e.isIntersecting){
+          setTimeout(() => e.target.classList.add('in'), Math.min(k * 35, 200));
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    items.forEach(li => { listEl.appendChild(li); io.observe(li); });
+  }
+
+  applyFilter();
+
+  // Back to top
+  const toTop = document.getElementById('totop');
+  window.addEventListener('scroll', () => {
+    toTop.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }));
+</script>
+</body>
+</html>
